@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simon Dice!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./main.css'>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex h-screen justify-center items-center bg-gray-900 flex-col relative">
+        <div class ="botones flex-wrap justify-center relative">
+            <button class="boton boton-verde" data-id="boton-verde"></button> 
+            <button class="boton boton-rojo" data-id="boton-rojo"></button> 
+            <button class="boton boton-amarillo" data-id="boton-amarillo"></button> 
+            <button class="boton boton-azul" data-id="boton-azul"></button>
+            <div class="circulo bg-gray-900 absolute text-white text-center">
+            </div>
+        </div>
+
+        <button class="boton-jugar bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded mt-20">
+            Jugar!
+        </button>
+        
+        <p class="absolute" id="titulo">Simon Dice</p>
+        <p class="absolute" id="texto-turno"></p>
+
+    </div>
+    <audio src="./gameboy.mp3" id="jugar-audio"></audio>
+    <audio src="./mixkit-circus-lose-2030.wav" id="perder-audio"></audio>
+    <script src='main.js'></script>
+</body>
+</html>

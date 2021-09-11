@@ -1,0 +1,108 @@
+.boton{
+    height: 200px;
+    width: 200px;
+}
+.boton-verde{
+    background-color: #006400; 
+    border-top-left-radius: 100%;
+}
+
+.boton-rojo{
+    background-color: #8B0000;
+    border-top-right-radius: 100%;
+}
+
+.boton-amarillo{
+    background-color: #666600;
+    border-bottom-left-radius: 100%;
+}
+
+.boton-azul{
+    background-color: #00008B;
+    border-bottom-right-radius: 100%;
+}
+
+.circulo{
+    font-size: 6rem;
+    bottom: 106px;
+    left: 104px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    line-height: 170px;
+}
+
+.botones{
+    width: 405px;
+}
+
+.boton-amarillo-highlight{
+    background-color: #f6ff2b;
+    box-shadow: -34px 33px 100px 30px #f6ff2b;
+}
+
+.boton-verde-highlight{
+    background-color: #63c500;
+    box-shadow: -34px -33px 100px 30px #b1ff63;
+}
+
+.boton-rojo-highlight{
+    background-color: #ff4d00;
+    box-shadow: 34px 33px 100px 30px #ff5e19;
+}
+
+.boton-azul-highlight{
+    background-color: rgb(49 202 255);
+    box-shadow: 34px 33px 100px 30px rgb(34 198 255);
+}
+
+p{
+    top: 60px;
+    color: blanchedalmond;
+    font-size: 75px;
+    font-family: fantasy;
+}
+
+#texto-turno{
+    top: 770px;
+    font-size: 50px;
+}
+
+.oculto{
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    p{
+        font-size: 65px; 
+    }
+    #texto-turno{
+        top: 700px;
+        font-size: 35px;
+    }
+    .boton{
+        height: 150px;
+        width: 150px;
+    }
+    .circulo{
+        font-size: 5rem;
+        width: 140px;
+        height: 140px;
+        line-height: 130px;
+        bottom: 90px;
+        left: 85px;
+    }
+    .botones{
+        width: 305px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    p{
+        font-size: 55px; 
+    }
+    #texto-turno{
+        top: 650px;
+        font-size: 25px;
+    }
+}
