@@ -75,10 +75,11 @@ p{
 
 @media screen and (max-width: 500px){
     p{
-        font-size: 65px; 
+        font-size: 65px;
+        top: -12px;
     }
     #texto-turno{
-        top: 700px;
+        top: 445px;
         font-size: 35px;
     }
     .boton{
