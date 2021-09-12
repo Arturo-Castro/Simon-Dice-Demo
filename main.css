@@ -1,6 +1,7 @@
 .boton{
     height: 200px;
     width: 200px;
+    -webkit-tap-highlight-color: transparent;
 }
 .boton-verde{
     background-color: #006400; 
