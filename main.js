@@ -34,7 +34,7 @@ function empezarRondaBot(){
     ronda++
     document.querySelector('.circulo').textContent = ronda
     document.querySelector('#texto-turno').classList.remove('oculto')
-    document.querySelector('#texto-turno').textContent = 'Es el turno de la computadora...'
+    document.querySelector('#texto-turno').textContent = 'Turno de la computadora'
     bloquearTurno()
     $botonesJugador = []
     $botonesBot.push($botones[Math.floor(Math.random()* 4)])
