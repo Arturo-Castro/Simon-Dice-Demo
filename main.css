@@ -108,3 +108,31 @@ p{
         font-size: 25px;
     }
 }
+
+@media screen and (min-width: 500px) and (max-width: 1440px){
+    #texto-turno {
+        top: 480px;
+        font-size: 35px;
+    }
+    p {
+        top: -15px;
+        color: white;
+        font-size: 60px;
+        font-family: 'Lobster', cursive;
+    }
+    .boton{
+        height: 150px;
+        width: 150px;
+    }
+    .circulo{
+        font-size: 5rem;
+        width: 140px;
+        height: 140px;
+        line-height: 130px;
+        bottom: 90px;
+        left: 85px;
+    }
+    .botones{
+        width: 305px;
+    }
+}
