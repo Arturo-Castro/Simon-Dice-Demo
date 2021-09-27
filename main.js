@@ -12,10 +12,8 @@ function resetearPartida(){
 }
 
 function llamarJugador(){
-    setTimeout(function(){
-        desbloquearTurno()
-        document.querySelector('#texto-turno').textContent = 'Es tu turno!' 
-    }, (1300*ronda))
+    desbloquearTurno()
+    document.querySelector('#texto-turno').textContent = 'Es tu turno!' 
 }
 
 function bloquearTurno(){
@@ -38,18 +36,20 @@ function empezarRondaBot(){
     bloquearTurno()
     $botonesJugador = []
     $botonesBot.push($botones[Math.floor(Math.random()* 4)])
-        $botonesBot.forEach(function(boton, index){
-            setTimeout(function(){
-                cambiarColor(boton)
-            }, (index + 1) * 1000)
+    $botonesBot.forEach(function(boton, index){
+        setTimeout(function(){
+            resaltarColor(boton)
+        }, (index + 1) * 1000)
     })
-    llamarJugador()
+    setTimeout(function(){
+        llamarJugador()
+    }, (1000*ronda)+300)
 }
 
 
 function empezarRondaJugador(e){
     aciertos = 0
-    cambiarColor(e.target)   
+    resaltarColor(e.target)   
     $botonesJugador.push(e.target)
     for (let i=0; i < $botonesJugador.length; i++){
         if (!($botonesBot[i] === $botonesJugador[i])){
@@ -69,7 +69,7 @@ function empezarRondaJugador(e){
 }
 
 
-function cambiarColor(boton){
+function resaltarColor(boton){
     const botonHighlight = boton.dataset.id 
     boton.classList.add(`${botonHighlight}-highlight`)
     setTimeout(function(){
